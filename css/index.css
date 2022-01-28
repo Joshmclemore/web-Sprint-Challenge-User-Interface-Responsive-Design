@@ -73,7 +73,31 @@ section, footer{
     margin: 0 auto;
 }
 
+
 /*Top Section Styles*/
+
+/* things I added ⬇️ */
+.topheader {
+    max-width: 100%;
+    display: flex;
+    padding: 5% 0;
+    justify-content: space-between;
+}
+
+.topheader img {
+    width: 30%;
+}
+
+button {
+   padding: 5px 10px;
+   margin: auto 0;
+}
+
+header {
+    display:flex;
+    flex-flow: column nowrap;
+}
+/* things I added ⬆️ */
 
 .top-content {
     display: flex;
@@ -85,9 +109,18 @@ section, footer{
 }
 
 .top-content .text-container {
-    width: 35%;
+    width: 48%;
     padding: 0 1%;
     padding-bottom: 4%;  
+}
+.text-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+h2 {
+    padding: 5%;
 }
 
 /*Middle Section Styles*/
@@ -102,7 +135,7 @@ section, footer{
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .middle-content .boxes .box {
@@ -113,6 +146,91 @@ section, footer{
     align-items: center;
     justify-content: center;
 }
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.boxes div {
+    display: flex;
+    width:175px;
+    height:175px;
+    margin: 1% 0;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+
+.box5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+}
+
+.box6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+}
+
+.box7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkorchid;
+}
+
+.box8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hotpink;
+}
+
+.box9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: indigo;
+}
+
+.box10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+}
+
+
 
 /*Bottom Section Styles*/
 .bottom-content {
@@ -138,3 +256,11 @@ footer {
 
 
 /*Responsive Styles*/
+@media  (max-width:1150px){
+    .boxes div {
+        display: flex;
+        width:18vh;
+        height:18vh;
+        margin: 1% 0;
+    }
+}
