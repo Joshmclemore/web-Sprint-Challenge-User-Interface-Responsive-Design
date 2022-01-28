@@ -84,6 +84,13 @@ section, footer{
     justify-content: space-between;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    color: solid black;
+}
+
 .topheader img {
     width: 30%;
 }
@@ -91,6 +98,14 @@ section, footer{
 button {
    padding: 5px 10px;
    margin: auto 0;
+   background: none;
+   border: none;
+   font-size: 2.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color:inherit
 }
 
 header {
@@ -125,7 +140,13 @@ h2 {
 
 /*Middle Section Styles*/
 .middle-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
     margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+    padding-bottom: 10%;
+    padding-top: 0%;
 }
 
 .middle-content h2 {
@@ -250,6 +271,9 @@ h2 {
 footer {
     width: 100%;
     background-color: #ff4b00;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
 }
 
 /*About Page Styles*/
