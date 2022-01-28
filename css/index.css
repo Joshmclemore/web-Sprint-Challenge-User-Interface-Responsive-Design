@@ -278,11 +278,12 @@ footer {
 }
 
 footer nav {
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
     display: flex;
     justify-content: space-between;
     width: 80%;
     font-size: 2rem;
+    font-weight:lighter;
 }
 
 footer nav a{
@@ -435,5 +436,104 @@ footer nav a{
         align-items: center;
         justify-content: center;
     }
+
+}
+
+/* Responsive styles for about mobile page */
+
+@media (max-width:900px) {
+    .topheaderabout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .topheaderabout img{
+        padding:3%;
+        max-width: 50%;
+    }
+
+    .topheaderabout nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+    }
+    .topheaderabout nav a{
+        padding: 3px;
+        max-width: 20%;
+    }
+    .topheaderabout button {
+       font-size: 2vh;
+       padding: 2px;
+    }
+
+}
+
+@media (max-width:500px){
+    .main-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:justify;
+        padding: 10% 0;
+    }
+
+    .topheaderabout img {
+        max-width: 75%;
+    }
+    .topheaderabout nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+    }
+    .topheaderabout nav a{
+        padding: 3px;
+    }
+    .main-about .text-container {
+        width: 100%;
+    }
+
+    .middle-about {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .middle-about div {
+        max-width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:justify;
+        padding: 10% 0;
+    }
+
+    .middle-about div img{
+        max-width: 100%;
+    }
+
+    .bottom-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:left;
+        padding: 10% 0;
+    }
+
+    .bottom-about h2 {
+        padding:0 0 5% 0;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
 
 }
